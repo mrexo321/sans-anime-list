@@ -10,7 +10,7 @@ const AnimeProductionDetail: FC<IData> = ({ datas, title }) => {
     <>
       <div className="flex items-center space-x-4 py-2">
         <span className="font-bold md:text-base text-sm">{title}</span>
-        <div className="md:flex items-center space-x-2 whitespace-nowrap">
+        <div className="md:flex items-center space-x-2">
           {datas.length > 0
             ? datas.map((data: any) => (
                 <span
