@@ -4,7 +4,7 @@ import NavigationSearchBar from "./NavigationSearchBar";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-indigo-500">
+    <div className="w-full bg-indigo-500 z-30">
       <Container>
         <div className="flex md:flex-row flex-col md:items-center justify-between py-2">
           <Link

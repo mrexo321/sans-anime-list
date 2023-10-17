@@ -8,10 +8,12 @@ const NavigationSearchBar = () => {
   const router = useRouter();
 
   const handleSearch = (e: any) => {
-    if (e.key == "Enter" || e.key == "click") {
+    if (e.key == "Enter" || e.type == "click") {
       e.preventDefault();
       const keyword = searchRef.current.value;
-      router.push(`/search/${keyword}`);
+      keyword
+        ? router.push(`/search/${keyword}`)
+        : alert("Form Pencarian Tidak Boleh Kosong");
     }
   };
   return (
@@ -19,12 +21,12 @@ const NavigationSearchBar = () => {
       <input
         type="text"
         className="rounded-lg w-full py-2 px-4 border-none outline-none"
-        ref={searchRef}
+        ref={searchRef ? searchRef : null}
         onKeyDown={handleSearch}
       />
       <MagnifyingGlass
         className="absolute end-2 top-2 cursor-pointer"
-        onKeyDown={handleSearch}
+        onClick={handleSearch}
         size={24}
       />
     </div>
