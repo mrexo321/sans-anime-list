@@ -8,11 +8,9 @@ interface IProps {
 
 const AnimeDetailStatus: FC<IProps> = ({ title, info, icon }) => {
   return (
-    <div className="flex flex-col leading-relaxed">
-      <h1 className="md:text-2xl text-lg font-semibold text-gray-900">
-        {title}
-      </h1>
-      <span className="md:text-md text-sm text-gray-900 flex items-center gap-x-2">
+    <div className="flex flex-col leading-relaxed dark:text-slate-100 text-gray-900">
+      <h1 className="md:text-2xl text-lg font-semibold">{title}</h1>
+      <span className="md:text-md text-sm flex items-center gap-x-2">
         {icon}
         {info}
       </span>

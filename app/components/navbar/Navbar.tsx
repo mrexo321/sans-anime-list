@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Container from "./Container";
-import NavigationSearchBar from "./NavigationSearchBar";
+import Container from "../Container";
+import NavigationSearchBar from "./partials/NavigationSearchBar";
 
 const Navbar = () => {
   return (

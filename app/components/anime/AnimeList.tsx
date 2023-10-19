@@ -12,7 +12,7 @@ const AnimeList: FC<IApi> = ({ api }) => {
   return (
     <Container>
       <Grid>
-        {api.map((anime) => (
+        {api?.map((anime) => (
           <div className="shadow-lg p-4 rounded-lg" key={anime.mal_id}>
             <Link href={`/anime/${anime.mal_id}`}>
               <Image

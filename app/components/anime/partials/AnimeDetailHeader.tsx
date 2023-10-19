@@ -22,11 +22,9 @@ const AnimeDetailHeader: FC<IProps> = ({
 }) => {
   return (
     <>
-      <div className="flex flex-col">
-        <h1 className="font-semibold md:text-4xl text-gray-900 text-xl">
-          {animeTitle}
-        </h1>
-        <div className="flex items-center text-gray-900 space-x-2">
+      <div className="flex flex-col dark:text-slate-100 text-gray-900">
+        <h1 className="font-semibold md:text-4xl  text-xl">{animeTitle}</h1>
+        <div className="flex items-center  space-x-2">
           <span>{animeYear}</span>
           <span>{animeEpisode} Episodes</span>
         </div>

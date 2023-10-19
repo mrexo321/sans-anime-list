@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import RoundedButton from "@/app/components/RoundedButton";
-import Separator from "@/app/components/Separator";
+import Separator from "@/app/components/utilities/Separator";
 import AnimeSynopsis from "./AnimeSynopsis";
 import AnimeProductionDetail from "./AnimeProductionDetail";
 import Box from "@/app/components/Box";

@@ -17,15 +17,15 @@ const NavigationSearchBar = () => {
     }
   };
   return (
-    <div className="relative">
+    <div className="relative dark:text-slate-100 text-black">
       <input
         type="text"
-        className="rounded-lg w-full py-2 px-4 border-none outline-none"
+        className="rounded-lg w-full py-2 px-4 border-none outline-none text-gray-900"
         ref={searchRef ? searchRef : null}
         onKeyDown={handleSearch}
       />
       <MagnifyingGlass
-        className="absolute end-2 top-2 cursor-pointer"
+        className="absolute end-2 top-2 cursor-pointer text-gray-900"
         onClick={handleSearch}
         size={24}
       />

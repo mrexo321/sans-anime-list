@@ -16,7 +16,7 @@ const Page = async () => {
   const popularAnimes = await response.json();
   return (
     <section>
-      <Header title="Most Popular" linkHref="/popular" linkName="look all" />
+      <Header title="Most Popular" linkHref="/anime" linkName="Look all" />
       <AnimeList api={popularAnimes.data} />
     </section>
   );
