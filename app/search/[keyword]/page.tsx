@@ -7,7 +7,8 @@ interface IParams {
 }
 
 const Page: FC<IParams> = async ({ params }) => {
-  const { keyword } = params;
+  const data = params.keyword;
+  const keyword = decodeURI(data);
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_BASE_URL}/anime?q=${keyword}`,
     { cache: "no-store" }

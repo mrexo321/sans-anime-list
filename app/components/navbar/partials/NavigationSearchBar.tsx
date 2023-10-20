@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import { useRouter } from "next/navigation";
+import { parse } from "querystring";
 
 const NavigationSearchBar = () => {
   const searchRef = useRef<any>();
@@ -9,8 +10,8 @@ const NavigationSearchBar = () => {
 
   const handleSearch = (e: any) => {
     if (e.key == "Enter" || e.type == "click") {
-      e.preventDefault();
       const keyword = searchRef.current.value;
+      e.preventDefault();
       keyword
         ? router.push(`/search/${keyword}`)
         : alert("Form Pencarian Tidak Boleh Kosong");

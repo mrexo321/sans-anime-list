@@ -13,7 +13,7 @@ const AnimeDetailInformation: FC<IData> = ({ data }) => {
   return (
     <div className="flex md:flex-row flex-col justify-evenly md:items-center items-start gap-x-4">
       <div className="flex flex-col md:w-3/4 w-full">
-        <div className="md:flex grid grid-cols-2 items-center gap-2">
+        <div className="md:flex grid grid-cols-2 items-center gap-2 py-2">
           {data.genres.map((genre: any) => (
             <RoundedButton key={genre.mal_id}>{genre.name}</RoundedButton>
           ))}
